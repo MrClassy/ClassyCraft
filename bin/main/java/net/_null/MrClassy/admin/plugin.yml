@@ -1,0 +1,5 @@
+name: Admin
+version: 0.1
+main: main.java.in.idig.admin.Admin
+commands:
+   

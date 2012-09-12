@@ -1,0 +1,25 @@
+Development Guide:
+
+Styles:
+	We use tabs for indentation, this allows users to set their own spacing.
+	Curly Brackets hold unique lines.  
+		function()
+		{
+			//code
+		}
+	
+	All methods and classes must be unit testable.
+		Unit tests are not required on all code, however the code must be able to be tested.
+	We apply DRY
+		Keep code as simple as possible, it makes reusing it easy.
+	Use verbose naming where posible (Comments for organization are ok)
+	
+	
+Features:
+	New features should follow a similar pattern as other features.
+		Improvements on the pattern are always welcome,  but refactoring is useful.
+	
+	New features must be scalable!
+		If a feature relies on a player or on an event ensure that the feature can scale up to 100+ players.
+		Unit testing will be used to mock high levels of players to identify issues at high usage.
+	Please update the Suite map in this directory as features are added or proposed.

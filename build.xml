@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<!--Borrowed ant file structure from logblock  -->
+<project default="Admin">
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: Install                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="Install">
+    	<mkdir dir="lib/"/>
+    	<mkdir dir="bin/"/>
+    	<get src="http://dl.bukkit.org/downloads/bukkit/get/latest-rb/bukkit.jar" dest="lib/bukkit.jar"/>
+    	<get src="http://dl.bukkit.org/downloads/craftbukkit/get/latest-rb/craftbukkit.jar" dest="lib/craftbukkit.jar"/>
+    	<javac srcdir="src/" destdir="bin/" classpath="lib/bukkit.jar;lib/craftbukkit.jar" debug="true" debuglevel="lines,source" includeantruntime="false"/>
+    </target>
+
+	<target name="Admin">
+		<mkdir dir="lib/"/>
+		<mkdir dir="bin/"/>
+		<javac srcdir="src/" destdir="bin/" classpath="lib/bukkit.jar;lib/craftbukkit.jar" debug="true" debuglevel="lines,source" includeantruntime="false"/>
+		<jar destfile="Admin.jar" manifest="MANIFEST.MF">
+			<fileset dir="bin/"/>
+			<fileset file="src/main/java/net/_null/MrClassy/admin/plugin.yml"/>
+		</jar>
+	</target>
+	<target name="Player">
+			<mkdir dir="lib/"/>
+			<mkdir dir="bin/"/>
+			<javac srcdir="src/" destdir="bin/" classpath="lib/bukkit.jar;lib/craftbukkit.jar" debug="true" debuglevel="lines,source" includeantruntime="false"/>
+			<jar destfile="Player.jar" manifest="MANIFEST.MF">
+				<fileset dir="bin/"/>
+				<fileset file="src/main/java/net/_null/MrClassy/player/plugin.yml"/>
+			</jar>
+	</target>
+	
+</project>

@@ -1,0 +1,29 @@
+/* Naming is changable for good reason */
+
+classyCraft
+	Admin
+	Player
+		Details
+			Name
+			IpHistory
+			ID
+		Play History
+			FirstLogin
+			LastLogin
+			LoginHistory
+			Timeplayed
+		
+		
+	Inventory
+		ItemPickup/Drop History
+		ChestNaming
+		Chest Addition/removal inventory tracking
+	Block
+		Block Mined Tracking
+	Money
+	Travel
+	Map
+	Communication
+	Permissions
+	
+	
