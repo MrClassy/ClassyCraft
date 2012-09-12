@@ -2,6 +2,9 @@
 
 classyCraft
 	Admin
+		Memory Stats
+		Error Logging(Reporting)
+		Server Stats (ingame/create report?)
 	Player
 		Details
 			Name
