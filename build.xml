@@ -21,7 +21,7 @@
 			<fileset file="src/main/java/net/_null/MrClassy/admin/plugin.yml"/>
 		</jar>
 	</target>
-	<target name="Inventoryn">
+	<target name="Inventory">
 			<mkdir dir="lib/"/>
 			<mkdir dir="bin/"/>
 			<javac srcdir="src/" destdir="bin/" classpath="lib/bukkit.jar;lib/craftbukkit.jar" debug="true" debuglevel="lines,source" includeantruntime="false"/>
