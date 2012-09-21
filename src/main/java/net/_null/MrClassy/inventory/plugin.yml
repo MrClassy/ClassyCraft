@@ -1,0 +1,8 @@
+name: Inventory
+version: 0.1
+main: main.java.net._null.MrClassy.inventory.Inventory
+commands:
+   inventory:
+      description: Inventory FAQ
+      permission: inventory.faq
+      permission-message: You do not have permissions

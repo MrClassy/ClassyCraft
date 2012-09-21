@@ -1,5 +1,5 @@
 name: Admin
 version: 0.1
-main: main.java.in.idig.admin.Admin
+main: main.java.net._null.MrClassy.admin.Admin
 commands:
    

@@ -21,6 +21,15 @@
 			<fileset file="src/main/java/net/_null/MrClassy/admin/plugin.yml"/>
 		</jar>
 	</target>
+	<target name="Inventoryn">
+			<mkdir dir="lib/"/>
+			<mkdir dir="bin/"/>
+			<javac srcdir="src/" destdir="bin/" classpath="lib/bukkit.jar;lib/craftbukkit.jar" debug="true" debuglevel="lines,source" includeantruntime="false"/>
+			<jar destfile="Inventory.jar" manifest="MANIFEST.MF">
+				<fileset dir="bin/"/>
+				<fileset file="src/main/java/net/_null/MrClassy/Inventory/plugin.yml"/>
+			</jar>
+		</target>
 	<target name="Player">
 			<mkdir dir="lib/"/>
 			<mkdir dir="bin/"/>
